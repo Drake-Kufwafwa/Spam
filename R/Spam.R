@@ -1,0 +1,63 @@
+#' Emails for Spam data
+#'
+#' This package contains a collection of Spam data approved by
+#' UCI. It contains both spam and non-spam emails.
+#' @docType package
+#' @name Spam
+#' @aliases spam Spam-package spambase
+NULL
+
+#' "Spam Emails"
+#'
+#'
+#' @source \url{https://archive.ics.uci.edu/ml/machine-learning-databases/00228/smsspamcollection.zip}
+#' @format A dataframe with 4601 elements (1813 Spam = 39.4%)
+#'
+#' Attribute Information:
+#'
+#' The last column of 'spambase.data' denotes whether the e-mail was
+#' considered spam (1) or not (0), i.e. unsolicited commercial e-mail.
+#' Most of the attributes indicate whether a particular word or
+#' character was frequently occuring in the e-mail.  The run-length
+#' attributes (55-57) measure the length of sequences of consecutive
+#' capital letters.  For the statistical measures of each attribute,
+#' see the end of this file.  Here are the definitions of the attributes:
+#'
+#' 48 continuous real [0,100] attributes of type word_freq_WORD
+#' = percentage of words in the e-mail that match WORD,
+#' i.e. 100 * (number of times the WORD appears in the e-mail) /
+#' total number of words in e-mail.  A "word" in this case is any
+#' string of alphanumeric characters bounded by non-alphanumeric
+#' characters or end-of-string.
+#'
+#' 6 continuous real [0,100] attributes of type char_freq_CHAR
+#' = percentage of characters in the e-mail that match CHAR,
+#' i.e. 100 * (number of CHAR occurences) / total characters in e-mail
+#'
+#' 1 continuous real [1,...] attribute of type capital_run_length_average
+#' = average length of uninterrupted sequences of capital letters
+#'
+#' 1 continuous integer [1,...] attribute of type capital_run_length_longest
+#' = length of longest uninterrupted sequence of capital letters
+#'
+#' 1 continuous integer [1,...] attribute of type capital_run_length_total
+#' = sum of length of uninterrupted sequences of capital letters
+#' = total number of capital letters in the e-mail
+#'
+#' 1 nominal {0,1} class attribute of type spam
+#' = denotes whether the e-mail was considered spam (1) or not (0),
+#' i.e. unsolicited commercial e-mail.
+#'
+#' \describe{
+#'   \item{approved_date}{Data the disc was approved}
+#'   \item{class}{Class of disc}
+#'   \item{diameter}{Diameter of disc (in cm)}
+#'   \item{flexibility}{Flexibility of disc (in kg)}
+#'   \item{height}{Height of disc (in cm)}
+#'   \item{manufacturer}{Manufacturer/distributor}
+#'   \item{model}{Disc model}
+#'   \item{rim_depth}{Rim depth (in cm)}
+#'   \item{rim_thickness}{Rim thickness (in cm)}
+#'   \item{weight}{Weight (in gm)}
+#' }
+"Spam"
