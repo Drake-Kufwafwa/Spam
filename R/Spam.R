@@ -48,16 +48,4 @@ NULL
 #' = denotes whether the e-mail was considered spam (1) or not (0),
 #' i.e. unsolicited commercial e-mail.
 #'
-#' \describe{
-#'   \item{approved_date}{Data the disc was approved}
-#'   \item{class}{Class of disc}
-#'   \item{diameter}{Diameter of disc (in cm)}
-#'   \item{flexibility}{Flexibility of disc (in kg)}
-#'   \item{height}{Height of disc (in cm)}
-#'   \item{manufacturer}{Manufacturer/distributor}
-#'   \item{model}{Disc model}
-#'   \item{rim_depth}{Rim depth (in cm)}
-#'   \item{rim_thickness}{Rim thickness (in cm)}
-#'   \item{weight}{Weight (in gm)}
-#' }
 "Spam"
